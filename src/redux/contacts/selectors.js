@@ -9,7 +9,8 @@ export const selectFilteredContacts = state => {
   const contacts = selectContacts(state);
   const filter = selectFilterValue(state);
   const normalazedFilter = filter.toLocaleLowerCase();
-  return contacts.filter(contact =>
+  const filtered = contacts.filter(contact =>
     contact.name.toLowerCase().includes(normalazedFilter)
   );
+  return filtered;
 };

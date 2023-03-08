@@ -9,7 +9,7 @@ import {
   Error,
   Container,
 } from './Register.styled';
-import { register } from 'redux/auth/operation';
+import { register } from 'redux/auth/operations';
 
 export const Register = () => {
   const dispatch = useDispatch();

@@ -9,7 +9,7 @@ import {
   Error,
   Container,
 } from './Login.styled';
-import { logIn } from 'redux/auth/operation';
+import { logIn } from 'redux/auth/operations';
 
 export const Login = () => {
   const dispatch = useDispatch();
