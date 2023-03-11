@@ -23,7 +23,7 @@ export const App = () => {
   }, [dispatch]);
 
   return isRefreshing ? (
-    'Noob'
+    'Refreshing...'
   ) : (
     <Routes>
       <Route path="/" element={<SharedLayout />}>
